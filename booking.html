@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Through The Lens</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Through The Lens</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="portraits.html">Portraits</a></li>
+          <li><a href="nature.html">Nature</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="creative.html">Creative</a></li>
+          <li><a href="automotive.html">Automotive</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="booking.html" class="btn">Book a Shoot</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header">
+    <h1>Book a Session</h1>
+  </section>
+
+  <section class="booking-section">
+    <p>
+      Fill in the details below and I’ll get back to you to confirm availability,
+      pricing, and any extra requirements for your shoot.
+    </p>
+
+    <form class="booking-form" action="https://formspree.io/f/mjgpvnky" method="POST">
+      <input type="hidden" name="_subject" value="New Booking Request - Through The Lens">
+
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div>
+        <label for="package">Preferred Package</label>
+        <select id="package" name="package" required>
+          <option value="">Select a package</option>
+          <option value="Starter">Starter</option>
+          <option value="Standard">Standard</option>
+          <option value="Premium">Premium</option>
+          <option value="Custom">Custom / Not sure yet</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="service">Type of Shoot</label>
+        <select id="service" name="service" required>
+          <option value="">Select shoot type</option>
+          <option>Portrait</option>
+          <option>Event</option>
+          <option>Lifestyle</option>
+          <option>Architecture</option>
+          <option>Nature</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+<div>
+  <label for="date">Preferred Date</label>
+  <input type="date" id="date" name="date" required>
+</div>
+
+      <div>
+        <label for="hours">Estimated Hours Needed</label>
+        <input type="number" id="hours" name="hours" min="1" max="24" placeholder="e.g. 2">
+      </div>
+
+      <div>
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="e.g. Nicosia, Limassol, venue name...">
+      </div>
+
+      <div>
+        <label for="people">Number of People</label>
+        <input type="number" id="people" name="people" min="1" placeholder="e.g. 1">
+      </div>
+
+      <div>
+        <label for="details">Extra Details</label>
+        <textarea id="details" name="message" placeholder="Tell me about the shoot, style, time, ideas, event type, print requests, or anything else..."></textarea>
+      </div>
+
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+
+  <p>Email: throughthelens.cy@gmail.com</p>
+  <p>Telephone: +357 96242452</p>
+
+    <div class="social-icons">
+    <a href="https://www.instagram.com/_through_the_lens_cy" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  </div>
+  </section>
+
+</body>
+</html>

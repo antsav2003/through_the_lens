@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Through The Lens</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Through The Lens</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="portraits.html">Portraits</a></li>
+          <li><a href="nature.html">Nature</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="creative.html">Creative</a></li>
+          <li><a href="automotive.html">Automotive</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="booking.html" class="btn">Book a Shoot</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>Through The Lens</h1>
+      <p>Capturing moments that matter</p>
+      <a href="#main-gallery" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <section id="main-gallery" class="gallery-section">
+    <h2>Featured Work</h2>
+    <div class="gallery" id="featured-gallery"></div>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      Welcome to Through The Lens. I focus on capturing powerful, authentic,
+      and timeless images that tell a story.
+    </p>
+  </section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+
+  <p>Email: throughthelens.cy@gmail.com</p>
+  <p>Telephone: +357 96242452</p>
+
+    <div class="social-icons">
+    <a href="https://www.instagram.com/_through_the_lens_cy" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  </div>
+  
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+    <div class="lightbox-watermark wm-top">Through The Lens</div>
+    <div class="lightbox-watermark wm-center">Through The Lens</div>
+    <div class="lightbox-watermark wm-bottom">Through The Lens</div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

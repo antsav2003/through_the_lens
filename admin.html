@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Through The Lens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Through The Lens</div>
+    <ul class="nav-links">
+      <li><a href="index.html">View Website</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header">
+    <h1>Admin Dashboard</h1>
+  </section>
+
+  <section class="booking-section">
+    <p>Use this page to manage gallery images and homepage content.</p>
+
+    <form class="booking-form" id="upload-form">
+      <div>
+        <label for="image">Select Image</label>
+        <input type="file" id="image" accept="image/*" required>
+      </div>
+
+      <div>
+        <label for="title">Image Title</label>
+        <input type="text" id="title" placeholder="e.g. Golden Hour Portrait" required>
+      </div>
+
+     <div>
+      <label>Categories</label>
+      <label><input type="checkbox" name="categories" value="portraits"> Portraits</label>
+      <label><input type="checkbox" name="categories" value="nature"> Nature</label>
+      <label><input type="checkbox" name="categories" value="events"> Events</label>
+      <label><input type="checkbox" name="categories" value="architecture"> Architecture</label>
+      <label><input type="checkbox" name="categories" value="lifestyle"> Lifestyle</label>
+      <label><input type="checkbox" name="categories" value="creative"> Creative</label>
+      <label><input type="checkbox" name="categories" value="automotive"> Automotive</label>
+    </div>
+
+      <div>
+        <label>
+          <input type="checkbox" id="featured">
+          Featured on homepage
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" id="hero">
+          Set as hero image
+        </label>
+      </div>
+
+      <button type="submit">Upload Image</button>
+    </form>
+
+    <h2 style="margin-top: 40px; text-align: center;">Manage Images</h2>
+    <div id="admin-gallery" class="gallery"></div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
