@@ -1,1 +1,93 @@
-[]
+[
+  {
+    "id": "1774383297368",
+    "title": "balcony",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774383296/adl9c3ztqugyqqayfe7v.jpg",
+    "publicId": "adl9c3ztqugyqqayfe7v",
+    "categories": [
+      "portraits"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1774383330589",
+    "title": "architecture",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774383330/fjcokzkhfw6okjcoqj1z.jpg",
+    "publicId": "fjcokzkhfw6okjcoqj1z",
+    "categories": [
+      "architecture"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1774384340892",
+    "title": "pafos_zara",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384340/uzrqorl1mfgmrrz9cncy.jpg",
+    "publicId": "uzrqorl1mfgmrrz9cncy",
+    "categories": [
+      "portraits"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1774384367361",
+    "title": "pafos_zara2",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384366/r4kcfhsndy5zigg2mafq.jpg",
+    "publicId": "r4kcfhsndy5zigg2mafq",
+    "categories": [
+      "portraits"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1774384388092",
+    "title": "zara_troodos",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384387/v0t34fol7zvnmppbpniw.jpg",
+    "publicId": "v0t34fol7zvnmppbpniw",
+    "categories": [
+      "portraits"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1774384416113",
+    "title": "zara_budapest1",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384415/jzk8zeiribhufn2f9px4.jpg",
+    "publicId": "jzk8zeiribhufn2f9px4",
+    "categories": [
+      "lifestyle"
+    ],
+    "featured": true
+  },
+  {
+    "id": "1774384493045",
+    "title": "duck",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384492/th348uxi3znpt9cwbgp2.jpg",
+    "publicId": "th348uxi3znpt9cwbgp2",
+    "categories": [
+      "nature"
+    ],
+    "featured": false
+  },
+  {
+    "id": "1774384954855",
+    "title": "anassa_hotel",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384954/js8fvnvvq7bkxu6ankay.jpg",
+    "publicId": "js8fvnvvq7bkxu6ankay",
+    "categories": [
+      "portraits"
+    ],
+    "featured": false
+  },
+  {
+    "id": "1774528398528",
+    "title": "dad",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774528396/xmb8l1rvtpucu1reexfj.jpg",
+    "publicId": "xmb8l1rvtpucu1reexfj",
+    "categories": [
+      "nature",
+      "architecture"
+    ],
+    "featured": false
+  }
+]
