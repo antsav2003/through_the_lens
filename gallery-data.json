@@ -1,4 +1,4 @@
-
+[
   {
     "id": "1774383330589",
     "title": "architecture",
@@ -90,5 +90,35 @@
       "creative"
     ],
     "featured": true
+  },
+  {
+    "id": "1774636295695",
+    "title": "Budapest lights",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774636294/sp5812muxesxwdj7iweq.jpg",
+    "publicId": "sp5812muxesxwdj7iweq",
+    "categories": [
+      "portraits"
+    ],
+    "featured": false
+  },
+  {
+    "id": "1774636328123",
+    "title": "balcony",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774636326/q0lnrezhii1vxivtmfhs.jpg",
+    "publicId": "q0lnrezhii1vxivtmfhs",
+    "categories": [
+      "portraits"
+    ],
+    "featured": false
+  },
+  {
+    "id": "1774636359750",
+    "title": "flower troodos",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774636358/xsi7ejeaw83ptaa7lubc.jpg",
+    "publicId": "xsi7ejeaw83ptaa7lubc",
+    "categories": [
+      "nature"
+    ],
+    "featured": false
   }
 ]
