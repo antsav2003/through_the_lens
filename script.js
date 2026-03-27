@@ -11,6 +11,12 @@ function imageHasCategory(image, categoryName) {
     );
   }
 
+  if (Array.isArray(image.category)) {
+    return image.category.some(
+      (cat) => normalizeCategory(cat) === target
+    );
+  }
+
   return normalizeCategory(image.category) === target;
 }
 
@@ -84,12 +90,13 @@ document.addEventListener("keydown", function (e) {
 async function initGalleries() {
   try {
     const response = await fetch("gallery-data.json");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
     const galleryData = await response.json();
-
-    const uploadedImages =
-      JSON.parse(localStorage.getItem("galleryData")) || [];
-
-    const allGalleryData = [...galleryData, ...uploadedImages];
+    const allGalleryData = Array.isArray(galleryData) ? galleryData : [];
 
     loadGallery(
       "featured-gallery",
@@ -119,16 +126,17 @@ async function initGalleries() {
     loadGallery(
       "lifestyle-gallery",
       allGalleryData.filter((img) => imageHasCategory(img, "lifestyle"))
-      
     );
-      loadGallery(
-        "creative-gallery",
-        allGalleryData.filter((img) => imageHasCategory(img, "creative"))
-      );
-      loadGallery(
-        "automotive-gallery",
-        allGalleryData.filter((img) => imageHasCategory(img, "automotive"))
-      );
+
+    loadGallery(
+      "creative-gallery",
+      allGalleryData.filter((img) => imageHasCategory(img, "creative"))
+    );
+
+    loadGallery(
+      "automotive-gallery",
+      allGalleryData.filter((img) => imageHasCategory(img, "automotive"))
+    );
   } catch (error) {
     console.error("Failed to load gallery data:", error);
   }
@@ -144,23 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const day = String(today.getDate()).padStart(2, "0");
 
     dateInput.min = `${year}-${month}-${day}`;
-  }
-
-  const heroImage = localStorage.getItem("heroImage");
-
-  if (heroImage) {
-    const heroSection = document.querySelector(".hero");
-    if (heroSection) {
-      const heroOptimized = heroImage.replace(
-        "/upload/",
-        "/upload/w_2200,q_auto:good,f_auto/"
-      );
-
-      heroSection.style.background = `
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.7)),
-        url(${heroOptimized}) center/cover no-repeat
-      `;
-    }
   }
 
   initGalleries();
