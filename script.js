@@ -20,7 +20,7 @@ function imageHasCategory(image, categoryName) {
   return normalizeCategory(image.category) === target;
 }
 
-function loadGallery(containerId, images) {
+ffunction loadGallery(containerId, images) {
   const gallery = document.getElementById(containerId);
   if (!gallery) return;
 
@@ -30,7 +30,7 @@ function loadGallery(containerId, images) {
     const img = document.createElement("img");
 
     const src = image.imageUrl || `images/${image.filename}`;
-    img.src = src;
+
     img.alt = image.title || image.filename || "Gallery image";
 
     img.addEventListener("load", () => {
@@ -39,9 +39,17 @@ function loadGallery(containerId, images) {
       }, index * 120);
     });
 
+    img.addEventListener("error", () => {
+      console.error("Failed to load image:", src);
+      img.style.opacity = "1";
+      img.alt = "Failed to load image";
+    });
+
     img.addEventListener("click", () => {
       openLightbox(img.src);
     });
+
+    img.src = src;
 
     gallery.appendChild(img);
   });
