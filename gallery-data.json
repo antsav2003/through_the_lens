@@ -7,7 +7,7 @@
     "categories": [
       "portraits"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "1774383330589",
@@ -27,7 +27,7 @@
     "categories": [
       "portraits"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "1774384367361",
@@ -37,7 +37,7 @@
     "categories": [
       "portraits"
     ],
-    "featured": true
+    "featured": fasle
   },
   {
     "id": "1774384388092",
@@ -47,7 +47,7 @@
     "categories": [
       "portraits"
     ],
-    "featured": true
+    "featured": fasle
   },
   {
     "id": "1774384416113",
@@ -57,7 +57,7 @@
     "categories": [
       "lifestyle"
     ],
-    "featured": true
+    "featured": fasle
   },
   {
     "id": "1774384493045",
