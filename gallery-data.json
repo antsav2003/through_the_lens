@@ -47,7 +47,7 @@
     "categories": [
       "portraits"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "1774384493045",
@@ -67,7 +67,7 @@
     "categories": [
       "portraits"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "1774528398528",
@@ -75,8 +75,30 @@
     "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774528396/xmb8l1rvtpucu1reexfj.jpg",
     "publicId": "xmb8l1rvtpucu1reexfj",
     "categories": [
-      "portrait"
+      "nature",
+      "architecture"
     ],
     "featured": false
+  },
+  {
+    "id": "1774635614597",
+    "title": "rally",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774635613/mykcmfwznxaaeqxwy16u.jpg",
+    "publicId": "mykcmfwznxaaeqxwy16u",
+    "categories": [
+      "automotive"
+    ],
+    "featured": false
+  },
+  {
+    "id": "1774635642787",
+    "title": "concert",
+    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774635641/palykwcr2uvkc9ua4j4u.jpg",
+    "publicId": "palykwcr2uvkc9ua4j4u",
+    "categories": [
+      "architecture",
+      "creative"
+    ],
+    "featured": true
   }
 ]
