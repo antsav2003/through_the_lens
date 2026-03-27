@@ -14,25 +14,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .logo {
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .nav-links {
-    gap: 15px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-}
-
 .social-icons {
   display: flex;
   justify-content: center;
@@ -50,6 +31,75 @@ html, body {
   color: #aaa;
   transform: scale(1.1);
 }
+/* =========================
+   Mobile phone
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 18px;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    width: 100%;
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .nav-links > li > a:not(.btn) {
+    top: 0;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 85vh;
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 52px;
+    line-height: 1.05;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .page-header {
+    padding-top: 170px;
+  }
+}
+
 /* =========================
    ADMIN
 ========================= */
