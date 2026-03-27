@@ -50,16 +50,6 @@
     "featured": false
   },
   {
-    "id": "1774384416113",
-    "title": "zara_budapest1",
-    "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384415/jzk8zeiribhufn2f9px4.jpg",
-    "publicId": "jzk8zeiribhufn2f9px4",
-    "categories": [
-      "lifestyle"
-    ],
-    "featured": true
-  },
-  {
     "id": "1774384493045",
     "title": "duck",
     "imageUrl": "https://res.cloudinary.com/dsrxgoidp/image/upload/v1774384492/th348uxi3znpt9cwbgp2.jpg",
