@@ -20,7 +20,7 @@ function imageHasCategory(image, categoryName) {
   return normalizeCategory(image.category) === target;
 }
 
-ffunction loadGallery(containerId, images) {
+function loadGallery(containerId, images) {
   const gallery = document.getElementById(containerId);
   if (!gallery) return;
 
